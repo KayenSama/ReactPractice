@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 600;
+  src: local('Barlow'), url(./assets/font/Barlow/Barlow-SemiBold.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 900;
+  src: local('Barlow'), url(./assets/font/Barlow/Barlow-Bold.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-weight: 600;
+  src: local('Fraunces'), url(./assets/font/Fraunces/Fraunces-Italic.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+  
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-weight: 900;
+  src: local('Fraunces'), url(./assets/font/Fraunces/Fraunces-Variable.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+  
+}
+* {font-size: 18px;}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+  font-family: Barlow;
+}
+.main-container {
+	min-height:100%;
+	position:relative;
+}
+main {
+   padding-bottom: 100px;
+}
+footer {
+        /* same as padding on main*/
+        height: 100px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+.nav{
+  &-title{
+    font-size: 48px!important;
+    font-family: 'Barlow';
+    font-weight: 900;
+    color: white!important;
+  }
+  &-link{
+    margin-right:20px;
+    color: white!important;
+  }
+  &-text{
+    font-family: 'Barlow';
+  }
+  &-button:hover{
+  background-color: white;
+   border-radius: 50px;
+   color: black !important;
+   
+  }
+}
+.galery{
+  &-img-margin{
+    padding-right: 0!important;
+    padding-left: 0!important;
+  }
+  &-text{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content:center;
+    margin: 100px !important;
+    height: 400px;
+  }
+  &-h2{
+    font-size: 40px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+  }
+  &-button{
+    border: none;
+    background-color: transparent;
+  }
+  
+}
+
+
+.container-image-background{
+  background: url(./assets/images/desktop/image-header.jpg) no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main-title-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 1000px;
+  padding-bottom: 400px;
+  letter-spacing: 35px;
+  font-family: 'Fraunces';
+  font-weight: 900;
+}
+
+
+
+
+
